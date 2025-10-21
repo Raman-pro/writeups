@@ -343,6 +343,8 @@ Since with LD we can assing a string to a particular register we need to create 
 
 For creating the payload I imported the same python libraries and ran the following script
 
+**Here below `i`,`j` denotes the index of os.\_wrap_close and os.popen respectively in the respective list dealing with.**
+
 ```python
 from flask import Flask, render_template, request
 import io, contextlib, threading
@@ -495,6 +497,8 @@ c.indexOf("<class 'os._wrap_close'>");
 and i got `i=138`
 
 similarly can be done for getting popen for we will get `j=382`
+
+**`i`,`j` denotes the index of os.\_wrap_close and os.popen respectively in the respective list**
 
 our final chusembly code looks like this:
 
